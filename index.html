@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verifica+ - Verificador de Fake News</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Verifica+</div>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Como Funciona</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </header>
+
+  <main>
+  <div class="container">
+    <h1>Verificador de Fake News</h1>
+    <h2>Saiba se a notícia é <span class=" verdadeira ">verdadeira</span> ou <span class=" falsa ">falsa</span>!</h2>
+    <p class="descricao">Utilize nosso verificador para checar a veracidade das informações. O sistema utiliza técnicas de processamento de linguagem natural e aprendizado de máquina para analisar o texto e indicar se a notícia é confiável.</p>
+
+    <form class="form-box">
+      <textarea id="texto" placeholder="Digite aqui a notícia ou manchete"></textarea>
+      <button type="button" onclick="verificar()">Verificar</button>
+    </form>
+
+    <div id="resultados"></div>
+  </div>
+</main>
+<footer>
+    © 2025 Verifica+ - Todos os direitos reservados
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
