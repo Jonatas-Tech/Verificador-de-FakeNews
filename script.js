@@ -10,7 +10,7 @@ async function verificar() {
   resultadosDiv.innerHTML = "<p>Carregando...</p>";
 
   try {
-    const resposta = await fetch(`http://localhost:5000/verificar?q=${encodeURIComponent(query)}`);
+    const resposta = await fetch(`https://verifica.onrender.com/verificar?q=${encodeURIComponent(query)}`);
     const dados = await resposta.json();
 
     if (!dados.claims || dados.claims.length === 0) {

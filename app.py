@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import requests
 from flask_cors import CORS  # importante para liberar requisições do frontend
 
+
 app = Flask(__name__)
 CORS(app)  # libera todas as origens, cuidado em produção
 
